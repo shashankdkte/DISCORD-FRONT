@@ -9,6 +9,7 @@ export const getActions = (dispatch) => {
     login: (userDetails, navigate) => dispatch(login(userDetails, navigate)),
     register: (userDetails, navigate) =>
       dispatch(register(userDetails, navigate)),
+    setUserDetail: (userDetails) => dispatch(setUserDetail(userDetails)),
   };
 };
 

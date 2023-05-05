@@ -1,5 +1,6 @@
 import React from "react";
 import { styled } from "@mui/system";
+import DropDownMenu from "./DropDownMenu";
 const MainContainer = styled("div")({
   position: "absolute",
   right: "0",
@@ -9,13 +10,17 @@ const MainContainer = styled("div")({
   borderBottom: "1px solid black",
   display: "flex",
   flexDirection: "column",
-  alignItems: "center",
+  alignItems: "flex-end",
   justifyContent: "space-between",
   padding: "0 15px",
   backgroundColor: "#36393f",
 });
 const AppBar = () => {
-  return <MainContainer></MainContainer>;
+  return (
+    <MainContainer>
+      <DropDownMenu />
+    </MainContainer>
+  );
 };
 
 export default AppBar;
